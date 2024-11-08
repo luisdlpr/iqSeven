@@ -10,7 +10,6 @@ import goodThings from "./assets/goodThings.jpg";
 import grad from "./assets/grad.jpg";
 import hotpot1 from "./assets/hotpot1.jpg";
 import japan2 from "./assets/japan2.jpg";
-import lv from "./assets/lv.jpg";
 import melbs from "./assets/melbs.jpg";
 import mjolner from "./assets/mjolner.jpg";
 import picnic from "./assets/picnic.jpg";
@@ -138,17 +137,6 @@ export const CONTENT = [
         date: new Date(2019, 10, 13),
         location: "Sydney Australia",
         description: "2 Year Anniversary",
-      },
-    ],
-  },
-  {
-    header: "You're a sugar mommy",
-    mems: [
-      {
-        imgSrc: lv,
-        date: new Date(2020, 4, 16),
-        location: "Sydney Australia",
-        description: "Buying your LV Bag",
       },
     ],
   },

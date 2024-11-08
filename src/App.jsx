@@ -1,16 +1,23 @@
 import "./App.css";
 import GrammerBox from "./GrammerBox";
-import test from "./assets/test.jpg";
+// import test from "./assets/test.jpg";
 import aerial from "./assets/aerial.jpg";
 import { CONTENT } from "./topContent";
+import MyThree from "./Three";
 
 function App() {
   return (
     <>
-      <header>
+      <header
+        style={{
+          display: "flex",
+          alignItems: "center",
+          flexDirection: "column",
+        }}
+      >
         <h1>{"LR <3 IQ"}</h1>
         <h2>Happy 7 Years!</h2>
-        <img src={test} width={"300px"} height={"300px"} />
+        <MyThree />
       </header>
       <hr
         style={{
@@ -25,7 +32,7 @@ function App() {
           flexDirection: "column",
         }}
       >
-        <h1> Top 8 Reasons I Love Being With You </h1>
+        <h1> Top 7 Reasons I Love Being With You </h1>
         {CONTENT.map(({ header, mems }, idx) => (
           <GrammerBox key={`grammerBox-${idx}`} header={header} mems={mems} />
         ))}

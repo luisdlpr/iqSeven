@@ -12,15 +12,11 @@ function Loader() {
 }
 
 const Scene = () => {
-  const gltf = useLoader(
-    GLTFLoader,
-    "model_compressed_color.gltf",
-    (loader) => {
-      const dracoLoader = new DRACOLoader();
-      dracoLoader.setDecoderPath("gltfLoader/gltf/");
-      loader.setDRACOLoader(dracoLoader);
-    },
-  );
+  const gltf = useLoader(GLTFLoader, "model.glb", (loader) => {
+    const dracoLoader = new DRACOLoader();
+    dracoLoader.setDecoderPath("gltfLoader/gltf/");
+    loader.setDRACOLoader(dracoLoader);
+  });
 
   return <primitive object={gltf.scene} scale={3} />;
 };
